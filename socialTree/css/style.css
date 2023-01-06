@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    background-color: #FAF7FD;
+}
+.background{
+    width: 100vw;
+    height: 200px;
+    overflow:hidden;
+    background-size: contain;    
+}
+.bg-image{
+    width: 100%;
+    height: auto;
+
+}
+.personal-image{
+    width: auto;
+    height: 400px;
+    background-position: center;
+    text-align: center;
+}
+.photo{
+    width: 190px;
+    height: 190px;
+
+    border-style: solid;
+    box-sizing: 3px;
+    border-radius: 100%;
+    border-color: #BB99DD;
+
+    margin-top: -95px;
+    padding: 5px;
+}
+.id{
+    padding-top: 10px;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    color: #BB99DD;
+}
+.links{
+    text-align: center;
+    font-family: Poppins;
+    margin-top: 10px;
+}
+.link-box{
+    max-width: 30vw;
+
+    border-style: solid;
+    box-sizing: 3px;
+    border-color: #BB99DD;
+    
+    margin: 0 auto;
+    margin-bottom: 45px;
+    padding-top: 10px;
+}
