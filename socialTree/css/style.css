@@ -10,13 +10,12 @@ html, body{
     width: 100vw;
     height: 200px;
     overflow:hidden;
-    background-size: contain;    
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-image: url('../images/background.png');
+    background-attachment:local;
 }
-.bg-image{
-    width: 100%;
-    height: auto;
 
-}
 .personal-image{
     width: auto;
     height: 400px;
@@ -47,14 +46,60 @@ html, body{
     font-family: Poppins;
     margin-top: 10px;
 }
-.link-box{
+.linkbox1,.linkbox2,.linkbox3{
     max-width: 30vw;
+    height: 40px;
 
     border-style: solid;
     box-sizing: 3px;
     border-color: #BB99DD;
+    border-radius: 3%;
     
     margin: 0 auto;
     margin-bottom: 45px;
     padding-top: 10px;
 }
+
+.linkbox1{
+    background-image: url(../assets/instagram.svg);
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    background-position: center;
+}
+.linkbox2{
+    background-image: url(../assets/twitter.svg);
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    background-position: center;
+}
+.linkbox3{
+    background-image: url(../assets/linkedin.svg);
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    background-position: center;
+}
+
+.linkbox1:hover,.linkbox2:hover,.linkbox3:hover{
+    background-color:#BB99DD;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.linkbox1:hover{
+    background-image: url(../assets/instagram_hover.png);
+}
+.linkbox2:hover{
+    background-image: url(../assets/twitter_hover.png);
+}
+.linkbox3:hover{
+    background-image: url(../assets/linkedin_hover.png);
+}
+.linkbox1:active{
+    background-image: url(../assets/instagram_active.png);
+}
+.linkbox2:active{
+    background-image: url(../assets/twitter_active.png);
+}
+.linkbox3:active{
+    background-image: url(../assets/linkedin_active.png);
+}
+
