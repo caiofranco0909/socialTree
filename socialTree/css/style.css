@@ -5,6 +5,7 @@
 html, body{
     height: 100%;
     background-color: #FAF7FD;
+    overflow-x: hidden;
 }
 .background{
     width: 100vw;
@@ -44,44 +45,45 @@ html, body{
 .links{
     text-align: center;
     font-family: Poppins;
-    margin-top: 10px;
+    margin-top: 10px; 
 }
 .linkbox1,.linkbox2,.linkbox3{
-    max-width: 30vw;
     height: 40px;
+    max-width: 30vw;
 
     border-style: solid;
-    box-sizing: 3px;
+    box-sizing:content-box;
     border-color: #BB99DD;
     border-radius: 3%;
     
     margin: 0 auto;
-    margin-bottom: 45px;
+    margin-top: 45px;
     padding-top: 10px;
+
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    background-position: center;
 }
 
 .linkbox1{
     background-image: url(../assets/instagram.svg);
-    background-repeat: no-repeat;
-    background-size: 35px 35px;
-    background-position: center;
 }
 .linkbox2{
     background-image: url(../assets/twitter.svg);
-    background-repeat: no-repeat;
-    background-size: 35px 35px;
-    background-position: center;
 }
-.linkbox3{
+.links > a:nth-of-type(3) > div{ /* Just testing some pseudo-classes to see how it works, turns out that use a class like "linkbox 3" is more easy and clear  to see*/
     background-image: url(../assets/linkedin.svg);
-    background-repeat: no-repeat;
-    background-size: 35px 35px;
-    background-position: center;
 }
 
-.linkbox1:hover,.linkbox2:hover,.linkbox3:hover{
+.linkbox1:hover,.linkbox2:hover,.links > a:nth-of-type(3) > div:hover{
     background-color:#BB99DD;
     border-color: rgba(0, 0, 0, 0);
+    max-width: 31.5vw;
+    height: 50px;
+    margin-top: 40px;
+    margin-bottom:-5px;
+
+    background-size: 45px 45px;
 }
 
 .linkbox1:hover{
@@ -90,16 +92,18 @@ html, body{
 .linkbox2:hover{
     background-image: url(../assets/twitter_hover.png);
 }
-.linkbox3:hover{
+.links > a:nth-of-type(3) > div:hover{
     background-image: url(../assets/linkedin_hover.png);
 }
 .linkbox1:active{
     background-image: url(../assets/instagram_active.png);
+    border-color: #8441c7;
 }
 .linkbox2:active{
     background-image: url(../assets/twitter_active.png);
-}
-.linkbox3:active{
+    border-color: #8441c7;
+} /*yasmin*/
+.links > a:nth-of-type(3) > div:active{
     background-image: url(../assets/linkedin_active.png);
+    border-color: #8441c7;
 }
-
