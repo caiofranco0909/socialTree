@@ -45,8 +45,15 @@ html, body{
 .links{
     text-align: center;
     font-family: Poppins;
-    margin-top: 10px; 
+    margin-top: 10px;
+    display: inline;
+    
 }
+.linkbox{
+    height: 40px;
+     max-width: 30vw;
+     margin: 0 auto;
+ }
 .linkbox1,.linkbox2,.linkbox3{
     height: 40px;
     max-width: 30vw;
@@ -71,11 +78,11 @@ html, body{
 .linkbox2{
     background-image: url(../assets/twitter.svg);
 }
-.links > a:nth-of-type(3) > div{ /* Just testing some pseudo-classes to see how it works, turns out that use a class like "linkbox 3" is more easy and clear  to see*/
+.linkbox3{ /* Just testing some pseudo-classes to see how it works, turns out that use a class like "linkbox 3" is more easy and clear  to see*/
     background-image: url(../assets/linkedin.svg);
 }
 
-.linkbox1:hover,.linkbox2:hover,.links > a:nth-of-type(3) > div:hover{
+.linkbox:hover,.linkbox1:hover,.linkbox2:hover,.linkbox3:hover{
     background-color:#BB99DD;
     border-color: rgba(0, 0, 0, 0);
     max-width: 31.5vw;
@@ -92,7 +99,7 @@ html, body{
 .linkbox2:hover{
     background-image: url(../assets/twitter_hover.png);
 }
-.links > a:nth-of-type(3) > div:hover{
+.linkbox3:hover{
     background-image: url(../assets/linkedin_hover.png);
 }
 .linkbox1:active{
@@ -103,7 +110,7 @@ html, body{
     background-image: url(../assets/twitter_active.png);
     border-color: #8441c7;
 } /*yasmin*/
-.links > a:nth-of-type(3) > div:active{
+.linkbox3:active{
     background-image: url(../assets/linkedin_active.png);
     border-color: #8441c7;
 }
